@@ -1,0 +1,54 @@
+body, html {
+    height:100%
+  }
+  
+  body {
+    display:flex;
+    margin:0;
+    flex-direction:column;
+  }
+  
+  .content {
+    margin:auto;
+    color:#FEF7FF;
+    font-family: 'Roboto';
+    font-size: 20px;
+    width: 60%;
+    background-color: #4B4453;
+    padding: 1%;
+    border-radius:7px;
+    margin-top:1%;
+  }
+
+  .caption{
+    font-size: xx-large;
+    width:100%;
+    color: #FEF7FF;
+    margin-top: 3%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pass{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .g{
+    font-family: 'Roboto';
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .shit{
+    height: 100%;
+    width: 100%;
+  }
+
+  .k{
+    width: 100%;
+    margin-top: 2%;
+  }

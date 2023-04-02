@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Misterio 0</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body style="background-color: #845EC2">
+         
+        <div class="shit">
+        <div class="caption"> Misterio 0</div>
+        <div class="pass">
+            <input type="text" class="g" size="50" placeholder="Lea la historia" onkeydown="check(this)">
+        </div>
+        <div class="content">
+            Bienvenido a una misteriosa cueva escondida en lo más profundo del bosque. Esta cueva sólo es conocida por unos pocos investigadores de la historia, pero cada vez se oyen más rumores extraños sobre ella. Se dice que la cueva está llena de acertijos, trampas y tesoros, pero también que guarda un oscuro secreto que vuelve loca a la gente.
+            <br><br>
+            Tú y tu amigo habéis decidido adentraros en ella para descubrir este secreto y salir con vida de la cueva. Debéis tener cuidado con las trampas y resolver rompecabezas para encontrar el tesoro escondido y descubrir el secreto antes de que sea demasiado tarde.
+            <br><br>
+            Una vez que entres en la cueva, quedarás encerrado dentro. Ahora comienza tu aventura. Tendrás que atravesar muchas salas, buscar pistas y resolver puzzles para descubrir el secreto de la cueva. ¿Serás capaz de encontrar la salida y desvelar el secreto antes de que te ocurra algo malo?
+            <br><br>
+            La contraseña es go
+        </div>
+    </div>
+        <script>
+            function check(g) {
+                password = "go"
+                next_level_link = "jhdas.html"
+
+                if(event.key === 'Enter') {
+                    if(g.value == password){
+                        window.location.href = next_level_link;
+                    }
+                    else{
+                        alert("contraseña incorrecta");
+                    }
+                }
+            }
+        </script>
+
+</body>
+</html>

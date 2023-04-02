@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Misterio 3</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body style="background-color: #845EC2">
+         
+        <div class="shit">
+        <div class="caption"> Misterio 3</div>
+        <div class="pass">
+            <input type="text" class="g" size="50" placeholder="Lea la historia" onkeydown="check(this)">
+        </div>
+        <div class="content">
+            Tras obtener la llave, encuentras en la habitación contigua un viejo cuaderno destartalado con un extraño texto. Este texto contiene huecos en los que tienes que escribir las palabras que faltan. Completando el texto pasarás a la siguiente fase.
+            <br><br>
+            Mis hijos …………………………………… (jugar) al fútbol.
+        </div>
+    </div>
+        <script>
+            function check(g) {
+                password = "van a jugar"
+                next_level_link = "diyh7u8as.html"
+
+                if(event.key === 'Enter') {
+                    if(g.value == password){
+                        window.location.href = next_level_link;
+                    }
+                    else{
+                        alert("contraseña incorrecta");
+                    }
+                }
+            }
+        </script>
+
+</body>
+</html>

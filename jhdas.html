@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Misterio 1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body style="background-color: #845EC2">
+         
+        <div class="shit">
+        <div class="caption"> Misterio 1</div>
+        <div class="pass">
+            <input type="text" class="g" size="50" placeholder="Lea la historia" onkeydown="check(this)">
+        </div>
+        <div class="content">
+            Llegas al primer acertijo, es un crucigrama en el que las respuestas a las preguntas son colores para poder seguir adelante debes dar la solución a este crucigrama que es el código de la puerta.
+
+            <img class="k" src="resources/krzyzowka.jpg">
+        </div>
+    </div>
+        <script>
+            function check(g) {
+                password = "abavnr"
+                next_level_link = "drfatsy.html"
+
+                if(event.key === 'Enter') {
+                    if(g.value == password){
+                        window.location.href = next_level_link;
+                    }
+                    else{
+                        alert("contraseña incorrecta");
+                    }
+                }
+            }
+        </script>
+
+</body>
+</html>

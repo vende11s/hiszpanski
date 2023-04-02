@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Misterio 2</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body style="background-color: #845EC2">
+         
+        <div class="shit">
+        <div class="caption"> Misterio 2</div>
+        <div class="pass">
+            <input type="text" class="g" size="50" placeholder="Lea la historia" onkeydown="check(this)">
+        </div>
+        <div class="content">
+            Una vez completado el crucigrama de colores, la puerta de la siguiente sala se desbloquea. Entras en ella y ves una mesa con una caja cerrada encima y una llave dentro. Encima de la mesa se lee un cartel: "Para abrir la caja, primero debes calcular la altura de la mesa".
+            <br><br>
+            La mesa parece bastante alta y no hay ninguna vara de medir que te ayude a calcular su altura. Entonces te das cuenta de que en la pared hay una ecuación matemática que te permitirá calcular la altura de la mesa.
+            <br><br>
+            <img class="k" src="resources/z.jpg">
+        </div>
+    </div>
+        <script>
+            function check(g) {
+                password = "150cm"
+                next_level_link = "idoasj.html"
+
+                if(event.key === 'Enter') {
+                    if(g.value == password || g.value == "1,5m" || g.value == "150"){
+                        window.location.href = next_level_link;
+                    }
+                    else{
+                        alert("contraseña incorrecta");
+                    }
+                }
+            }
+        </script>
+
+</body>
+</html>

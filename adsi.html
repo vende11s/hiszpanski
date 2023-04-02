@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Misterio 5</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body style="background-color: #845EC2">
+         
+        <div class="shit">
+        <div class="caption"> Misterio 5</div>
+        <div class="pass">
+            <input type="text" class="g" size="50" placeholder="Lea la historia" onkeydown="check(this)">
+        </div>
+        <div class="content">
+            Después de salir de la sala anterior, te encuentras en la siguiente sala, donde hay una serie de puntos y rayas en la pared. Para resolver el acertijo tienes que descifrar el texto y responder a la pregunta que aparece en él
+            <br><br>
+            ..-.- --.- ..- ..-.. / . ... / .-.. --- / --.- ..- . / - .. . -. . / .--. . .-.. --- --..-- / .-.. .- -.. .-. .- / -.-- / . ... / . .-.. / -- . .--- --- .-. / .- -- .. --. --- / -.. . .-.. / .... --- -- -... .-. . ..--..
+        </div>
+    </div>
+        <script>
+            function check(g) {
+                password = "un perro"
+                password2 = "perro"
+                next_level_link = "gg.html"
+
+                if(event.key === 'Enter') {
+                    if(g.value == password || g.value == password2){
+                        window.location.href = next_level_link;
+                    }
+                    else{
+                        alert("contraseña incorrecta");
+                    }
+                }
+            }
+        </script>
+
+</body>
+</html>

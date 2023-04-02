@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Misterio 5</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body style="background-color: #845EC2">
+         
+        <div class="shit">
+        <div class="caption"> Misterio 5</div>
+        <div class="pass">
+            <input type="text" class="g" size="50" placeholder="Lea la historia" onkeydown="check(this)">
+        </div>
+        <div class="content">
+            Después de un largo y difícil viaje por la cueva, has conseguido resolver todos los enigmas y sobrevivir a los numerosos peligros que te has encontrado en el camino. Finalmente, tras otra puerta, sales al exterior y respiras el aire fresco, regocijándote de tu éxito.
+            <br><br>
+            El crepúsculo indica que habéis pasado muchas horas en la cueva. Al vivir juntos esta aventura, os habéis conocido mejor y habéis aprendido a confiar el uno en el otro.   
+        </div>
+    </div>
+        <script>
+            function check(g) {
+                password = "2137"
+                next_level_link="resources/p.jpg"
+                if(event.key === 'Enter') {
+                    if(g.value == password){
+                        window.location.href = next_level_link;
+                    }
+                    else{
+                        alert("contraseña incorrecta");
+                    }
+                }
+            }
+        </script>
+
+</body>
+</html>
